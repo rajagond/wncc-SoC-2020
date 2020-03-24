@@ -15,9 +15,10 @@ int main(){
 	for(int i=1;i<=T;i++){
 		int R,C,K;
 		cin>>R>>C>>K;
-		int result;
-		result=(check2(R,K)-check1(R,K)+1)*(check2(C,K)-check1(C,K)+1);
-		cout<<result<<endl;
+		int rowlen,collen;
+		rowlen=(check2(R,K)-check1(R,K)+1);
+                collen=(check2(C,K)-check1(C,K)+1);
+		cout<<(rowlen)*(collen)<<endl;
 	}
 	return 0;
 }
