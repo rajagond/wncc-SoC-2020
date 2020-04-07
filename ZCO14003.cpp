@@ -1,4 +1,4 @@
-.* Problem link
+/* Problem link
 https://www.codechef.com/LRNDSA01/problems/ZCO14003
 */
 #include <algorithm>
