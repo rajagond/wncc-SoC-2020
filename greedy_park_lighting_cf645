@@ -1,0 +1,48 @@
+#include <bits/stdc++.h> 
+using namespace std; 
+typedef long long ll;
+typedef pair<ll,ll> pll;
+const ll mod = 1e9 + 7;
+
+void solve(){
+    ll n,m;
+    cin>>n>>m;
+    ll res=0;
+    if(n%2==0 && m%2==0){
+         res=(n*m)/2;
+    }
+    else{
+        if(n%2==0){
+            res=(n*(m-1))/2;
+            res+=n/2;
+        }
+        if(m%2==0){
+            res=(m*(n-1))/2;
+            res+=m/2;
+        }
+        else{
+            res=((m-1)*(n-1))/2;
+            res+=((m-1)/2)+((n-1)/2)+1;
+        }
+    }
+    cout<<res<<'\n';
+}
+
+int main()
+{
+//    freopen("input.txt", "r", stdin);
+#ifdef LOCAL
+	freopen("in.txt", "r", stdin);
+	freopen("out.txt", "w", stdout);
+#endif
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    
+    int t;
+    cin >> t;
+    while(t --> 0)
+        solve();
+
+    return 0;
+}
