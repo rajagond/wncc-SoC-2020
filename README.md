@@ -1,1 +1,1 @@
-# Wncc-Soc
+# wncc-SoC-2020
